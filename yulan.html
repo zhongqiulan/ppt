@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>在线预览PDF文档</title>
+    <link rel="stylesheet" href="bootstrap-3.3.7/css/bootstrap.min.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.media.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('#handout_wrap_inner').media({
+                width: '100%',
+                height: '600px',
+                autoplay: true,
+                src: 'http://storage.xuetangx.com/public_assets/xuetangx/PDF/PlayerAPI_v1.0.6.pdf'
+            });
+        });  
+    </script>
+
+</head>
+
+<body>
+    <center>
+        <div class="panel panel-primary">
+            <div class="panel-heading" align="center">
+                <h2>预览pdf文件</h2>
+            </div>
+            <div class="panel-body">
+                <div id="handout_wrap_inner"></div>
+            </div>
+            <a href="http://storage.xuetangx.com/public_assets/xuetangx/PDF/PlayerAPI_v1.0.6.pdf"
+                target="_blank">PDF在线预览</a>
+            <br>
+            <a href="http://www.xdocin.com/xdoc?_func=to&amp;_format=html&amp;_cache=1&amp;_xdoc=http://www.xdocin.com/demo/demo.docx"
+                target="_blank" rel="nofollow">DOCX在线预览</a>
+            <br>
+            <a href="./第二章-变量-数据类型-和运算符.ppt">PPT在线预览</a>
+            
+
+            <iframe src="https://ow365.cn/?i=18679&ssl=1&furl=http://www.xdocin.com/demo/demo.docx" width="100%"
+                height="500px" frameborder="0">
+            </iframe>
+            <iframe src="//www.xdocin.com/xdoc?_func=to&_format=html&_cache=1&_xdoc=http://www.xdocin.com/demo/demo.docx" width="100%"
+                height="500px" frameborder="0">
+            </iframe>
+        </div>
+    </center>
+</body>
+
+</html>
